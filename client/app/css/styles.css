@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('./fonts/Gilroy-Light.otf') format('opentype');
+  font-weight: light;
+}
+
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('./fonts/Gilroy-ExtraBold.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'dev-rant';
+  src: url('fonts/dev-rant.eot?uerc27');
+  src: url('fonts/dev-rant.eot?uerc27#iefix') format('embedded-opentype'), url('fonts/dev-rant.ttf?uerc27') format('truetype'), url('fonts/dev-rant.woff?uerc27') format('woff'), url('fonts/dev-rant.svg?uerc27#dev-rant') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dev-rant' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dev-rant:before {
+  content: "\e900";
+}
+
+p {
+  font-family: 'Gilroy-Light';
+  margin: 1.5rem;
+}
+
+h1 {
+  font-family: 'Gilroy-ExtraBold';
+}
+
+.text-danger {
+  color: #ff3860
+}
+
+.fixed {
+  position: fixed
+}
+
+.home-hero-title {
+  font-family: 'Gilroy-Light';
+  font-size: 3.5rem;
+}
+
+.home-hero-subtitle {
+  font-family: 'Gilroy-ExtraBold';
+  font-size: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fluid {
+  width: 100%
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  min-height: 100vh;
+  background-color: #fafafa;
+  font-size: 1.2rem;
+}
+
+.text-container {
+  max-width: 600px;
+}
