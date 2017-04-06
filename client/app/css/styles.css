@@ -97,11 +97,11 @@ h1 {
 	max-width: 600px;
 }
 
-.projects {
+.page {
 	padding-top: 30px
 }
 
-.projects-main-title {
+.page-title {
 	font-family: "Gilroy-Light";
 }
 
@@ -125,4 +125,17 @@ h1 {
 	bottom: 0;
 	left: 12.5%;
 	border-bottom: 2px solid #00d1b2;
+}
+
+.title-skill {
+	border-width: 2px;
+    border-style: solid;
+    border-color: #00d1b2;
+    display: inline-block;
+	padding: 8px 15px;
+	border-radius: 5px;
+}
+
+.skill {
+	padding: 50px 15px
 }
