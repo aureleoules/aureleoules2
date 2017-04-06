@@ -1,14 +1,14 @@
-<nav class="nav has-shadow fixed fluid">
+<nav class="nav has-shadow">
   <div class="container">
     <div class="nav-left">
       <a class="nav-item" href="/">
         <!--<img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">-->
 		<h1>Aurèle Oulès</h1>
       </a>
-      <a class="nav-item is-tab is-hidden-mobile is-active" href="/">Home</a>
-      <a class="nav-item is-tab is-hidden-mobile" href="/projects">Projects</a>
-      <a class="nav-item is-tab is-hidden-mobile" href="/skills">Skills</a>
-      <a class="nav-item is-tab is-hidden-mobile" href="/contact">Contact</a>
+      <a class="nav-item is-tab is-hidden-mobile" ng-class="$ctrl.getClass('/')" href="/">Home</a>
+      <a class="nav-item is-tab is-hidden-mobile" ng-class="$ctrl.getClass('/projects')" href="/projects">Projects</a>
+      <a class="nav-item is-tab is-hidden-mobile" ng-class="$ctrl.getClass('/skills')" href="/skills">Skills</a>
+      <a class="nav-item is-tab is-hidden-mobile" ng-class="$ctrl.getClass('/contact')" href="/contact">Contact</a>
     </div>
     <span class="nav-toggle" id="nav-toggle">
       <span></span>
