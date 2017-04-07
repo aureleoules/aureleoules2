@@ -7,16 +7,16 @@ import jQuery from 'jquery/dist/jquery';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bulma/css/bulma.css';
 import './css/styles.css';
-import './js/bulma';
+// import './js/bulma';
 
 angular.module('app', [
-    uiRouter,
-    Common,
-    Components
-  ])
-  .config(($locationProvider) => {
-    "ngInject";
-    $locationProvider.html5Mode(true).hashPrefix('!');
-  })
+		uiRouter,
+		Common,
+		Components
+	])
+	.config(($locationProvider) => {
+		"ngInject";
+		$locationProvider.html5Mode(true).hashPrefix('!');
+	})
 
-  .component('app', AppComponent);
+	.component('app', AppComponent);

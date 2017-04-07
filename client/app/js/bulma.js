@@ -1,12 +1,12 @@
 import jQuery from 'jquery/dist/jquery.min';
 jQuery(document).ready(function ($) {
 
-  var $toggle = $('#nav-toggle');
-  var $menu = $('#nav-menu');
+  var toggle = $('#nav-toggle');
+  var menu = $('#nav-menu');
 
-  $toggle.click(function () {
-    $(this).toggleClass('is-active');
-    $menu.toggleClass('is-active');
+  toggle.click(function () {
+    toggle.toggleClass('is-active');
+    menu.toggleClass('is-active');
   });
 
   $('.modal-button').click(function () {

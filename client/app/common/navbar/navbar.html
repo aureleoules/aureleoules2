@@ -17,9 +17,9 @@
     <span></span>
     </span>
     <div class="nav-right nav-menu" id="nav-menu">
-      <a class="nav-item is-tab is-hidden-tablet is-active" href="/">Home</a>
-      <a class="nav-item is-tab is-hidden-tablet" href="/projects">Projects</a>
-      <a class="nav-item is-tab is-hidden-tablet" href="/skills">Skills</a>
+      <a class="nav-item is-tab is-hidden-tablet" ng-class="$ctrl.getClass('/')" href="/">Home</a>
+      <a class="nav-item is-tab is-hidden-tablet" ng-class="$ctrl.getClass('/projects')" href="/projects">Projects</a>
+      <a class="nav-item is-tab is-hidden-tablet" ng-class="$ctrl.getClass('/skills')" href="/skills">Skills</a>
       <a class="nav-item is-tab" target="_blank" href="https://github.com/aureleoules"><i class="fa fa-github"></i></a>
       <a class="nav-item is-tab" target="_blank" href="https://www.devrant.io/users/NufMeister"><i class="icon-dev-rant"></i></a>
       <a class="nav-item is-tab" target="_blank" href="https://twitter.com/NufMeister"><i class="fa fa-twitter"></i></a>
