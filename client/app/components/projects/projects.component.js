@@ -5,7 +5,7 @@ let projectsComponent = {
   restrict: 'E',
   bindings: {},
   template,
-  controller
+  controller: ["$scope", "$http", controller]
 };
 
 export default projectsComponent;

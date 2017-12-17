@@ -108,12 +108,24 @@ h1 {
 .project {
 	margin: 30px;
 	text-align: center;
+	min-width: 300px;
+}
+
+.github-infos {
+	bottom: 0;
+	margin: 15px
 }
 
 .project>a {
 	padding-bottom: 5px;
 	position: relative;
 	display: inline;
+}
+
+.container-projects {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .project>a:before {

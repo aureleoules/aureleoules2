@@ -1,52 +1,24 @@
 <navbar></navbar>
 <div class="page">
 	<h1 class="title has-text-centered is-1 page-title tracking-in-expand">Projects</h1>
-	<div class="container">
-		<div class="columns">
-			<div class="box column project scale-in-center">
-				<a target="_blank" href="https://github.com/aureleoules/ReviZone" class="title">ReviZone</a>
-				<p>
-					<a target="_blank" href="https://github.com/aureleoules/ReviZone">ReviZone</a> is a website made for students who want to learn their lessons very quickly!
-				</p>
-			</div>
-			<div class="box column project scale-in-center">
-				<a target="_blank" href="http://weather.oules.com" class="title">WeathR</a>
-				<p>
-					A simple Weather Station using <a target="_blank" href="https://material.io/guidelines/">Material Design</a> and <a target="_blank" href="https://facebook.github.io/react/">React</a>.
-				</p>
-			</div>
-			<div class="box column project scale-in-center">
-				<a target="_blank" href="http://aurele.oules.com" class="title">aureleoules2</a>
-				<p>
-					This is my personal website.
-				</p>
-			</div>
-			<div class="box column project scale-in-center">
-				<a target="_blank" href="http://blog-aurele.oules.com" class="title">Blog</a>
-				<p>
-					This is my personal blog.
-				</p>
+	<div class="container container-projects">
+		<div class="box column project scale-in-center" ng-repeat="repo in repos | orderBy: '-created_at'">
+			<a target="_blank" ng-href="{{repo.html_url}}" class="title">{{repo.name}}</a>
+			<p style="margin: 1rem">
+				{{repo.description}}
+			</p>
+			<div class="github-infos">
+				<span class="tag is-primary">{{repo.language}}</span>
+				<a target="_blank" style="color: #363636" ng-href="{{repo.html_url}}/stargazers">
+					<i class="fa fa-heart"></i> 
+					{{repo.stargazers_count}}
+				</a>
+				<br>
+				<p style="font-size: 0.8em; margin: 1rem">Updated on {{moment(repo.updated_at).fromNow()}}</p>
+				</div>
 			</div>
 		</div>
 		<div class="columns">
-			<div class="box column project scale-in-center">
-				<a target="_blank" href="https://github.com/aureleoules/ClashOfDecks" class="title">Clash of Decks</a>
-				<p>
-					A website that lets you create powerful decks for <a target="_blank" href="https://clashroyale.com/fr">Clash Royale</a>.
-				</p>
-			</div>
-			<div class="box column project scale-in-center">
-				<a target="_blank" href="https://github.com/aureleoules/Soundcloud-Favorites-To-CSV" class="title">SoundcloudToCSV</a>
-				<p>
-					A tiny Python script that lets you fetch all favorite tracks of a <a target="_blank" href="https://soundcloud.com/">Soundcloud</a> user into a CSV file!
-				</p>
-			</div>
-			<div class="box column project scale-in-center">
-				<a target="_blank" href="https://aureleoules.github.io/aureleoules/" class="title">aureleoules (old)</a>
-				<p>
-					This used to be my personal website!
-				</p>
-			</div>
 		</div>
 	</div>
 </div>
