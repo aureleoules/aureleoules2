@@ -36,7 +36,11 @@
 .icon-dev-rant:before {
 	content: "\e900";
 }
-
+.snow {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+  }
 p {
 	font-family: 'Gilroy-Light';
 	margin: 1.5rem;
