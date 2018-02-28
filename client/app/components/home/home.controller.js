@@ -12,15 +12,15 @@ class HomeController {
 			'is-dark',
 			'is-primary'
 		];
+		hero.addEventListener('click', () => {
+			var random = Math.floor(Math.random() * classes.length);
+			hero.className = "hero is-fullheight " + classes[random];
+		});
 		const month = moment().month() + 1;
 		if(month === 11 || month === 12) {
 			makeItSown();
 		}
 		function makeItSown() {
-			hero.addEventListener('click', () => {
-				var random = Math.floor(Math.random() * classes.length);
-				hero.className = "hero is-fullheight " + classes[random];
-			});
 			var canvas = document.getElementById('snow'),
 				ctx = canvas.getContext('2d'),
 				width = ctx.canvas.width = canvas.offsetWidth,
