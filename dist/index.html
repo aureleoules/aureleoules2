@@ -13,6 +13,21 @@
 </head>
 
 <body ng-app="app" ng-strict-di ng-cloak>
+	<audio style="display: none" id="audio" src="https://puu.sh/zxPY2/3edff37afc.mp3"></audio>
+
+	<script>
+		const audio = document.getElementById("audio");
+
+		function delayPlayAudio() {
+			setTimeout(() => {
+				audio.play();
+				delayPlayAudio();
+			}, Math.floor(Math.random() * 30000) + 5000);
+
+		}
+		delayPlayAudio();
+
+	</script>
 	<app></app>
 
 	<script>
@@ -34,6 +49,7 @@
 		ga('create', 'UA-87347200-4', 'auto');
 		ga('send', 'pageview');
 	</script>
-<script src="vendor.bundle.js?398592e6f55000fc0f59"></script><script src="app.bundle.js?398592e6f55000fc0f59"></script></body>
+
+<script src="vendor.bundle.js?2a70431d3ab6d746b4d0"></script><script src="app.bundle.js?2a70431d3ab6d746b4d0"></script></body>
 
 </html>
