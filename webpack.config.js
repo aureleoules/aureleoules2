@@ -45,6 +45,10 @@ module.exports = {
       {
         test: /\.eot$/,
         loader: 'url?limit=65000&mimetype=application/vnd.ms-fontobject&name=public/fonts/[name].[ext]'
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
   },
